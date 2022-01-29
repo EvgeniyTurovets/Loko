@@ -532,7 +532,7 @@
         width: 74px;
     }
     .col-2{
-        width: 14%;
+        width: 13%;
     }
     .col-3{
         width: 13%;
@@ -1330,5 +1330,145 @@
     }
     .abonement__col{
         margin-bottom: 20px;
+    }
+}
+
+.match-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.match-block__col{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 110%;
+    color: #72727C;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    img{
+        height: 30px;
+        margin: 0 2px;
+    }
+}
+.match-block__vs{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 110%;
+    color: #86868F;
+    font-family: var(--font);
+    
+}
+.match-block__col.left{
+
+    justify-content: flex-end;
+}
+.price-block--left {
+    margin-left: 0;
+}
+.price-block--left .bal{
+    text-align: left;
+}
+
+.table-download{
+    width: 42px;
+    height: 42px;
+    position: relative;
+    .download{
+        background-image: url(../img/abonement/download.svg);
+        background-repeat: no-repeat;
+        background-size: 16px;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.prof-bot__table .col-3.col-pdf{
+    width: 66px;
+}
+
+@media(max-width: 767px){
+    .prof-bot__table .col-3.col-pdf{
+        display: block;
+        width: 0;
+        padding: 0;
+        right: 10px;
+        position: absolute;
+        left: 10px;
+        width: auto;
+        bottom: 15px;    
+    }
+    .prof-bot__table--bileti .col-6{
+        display: none;
+    }
+    .table-download{
+        width: 100%;
+        a{
+            width: 100%;
+            background-color: #e33046;
+        }
+    }
+}
+
+@media(max-width: 575px){
+    .match-block__col{
+        font-size: 0;
+    }
+}
+
+.prof-bot__pretotal{
+    background-color: #fff;
+    padding: 0 20px;
+    margin-top: -20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.prof-bot__pretotal__wrap{
+    border-top: 1px solid rgb(0,0,0,0.1);
+    padding-top: 18px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .col{
+        margin: 0 23px;
+        text-align: center;
+        margin-bottom: 30px;
+        .t1{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 110%;
+            color: #1E1E1E;
+            margin-bottom: 9px;
+        }
+        .t2{
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 110%;
+            color: #1E1E1E;
+            font-family: var(--font);
+        }
+    }
+   
+}
+.prof-bot__pretotal__link{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    a{
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 110%;
+        letter-spacing: 0.2em;
+        color: #203837;
+        opacity: 0.5;
+        font-family: var(--font);
+    }
+    a:hover{
+        opacity: 1;
     }
 }
