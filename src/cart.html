@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>New site</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div class="page-wrap">
+    @include('partials/header.html')
+
+    <main class="page-content">
+
+      <div class="page-top-img">
+        <img src="./img/sale/back.png" alt="">
+      </div>
+      <div class="container-fluid">
+        <div class="prof">
+          <div class="cart">
+            <div class="page-section-header">
+              <h2>
+                <span class="green-text">Корзина</span> c билетами
+              </h2>
+            </div>
+            <div class="cart__wrap">
+              <div class="left">
+                <div class="cart__top">
+                  <div class="t">Атлетико vs локомотив</div>
+                  <div class="t2">Суббота, 29 февраля, 19:00</div>
+                </div>
+                <div class="cart__rows">
+                  <div class="cart__rows__item">
+                    <div class="cart__rows__top">
+                      <div class="cart__rows__name">
+                        <div>
+                          Ряд 3
+                        </div>
+                        <div>
+                          место 15
+                        </div>
+                      </div>
+                        
+                      <div class="cart__rows__price">
+                        400 ₽
+                      </div>
+                    </div>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox-label"></span>
+                      Детский билет
+                    </label>
+                  </div>
+                  <div class="cart__rows__item">
+                    <div class="cart__rows__top">
+                      <div class="cart__rows__name">
+                        <div>
+                          Ряд 3
+                        </div>
+                        <div>
+                          место 15
+                        </div>
+                      </div>
+                        
+                      <div class="cart__rows__price">
+                        400 ₽
+                      </div>
+                    </div>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox-label"></span>
+                      Детский билет
+                    </label>
+                  </div>
+                </div>
+                <label class="cart-parkovka checkbox">
+                  <input type="checkbox">
+                  добавить парковку
+                  <span class="checkbox-label"></span>
+                </label>
+              </div>
+              <div class="right">
+                <div class="cart__top">
+                  <div class="t">Ваши данные</div>
+                </div>
+                <div class="cart__form">
+                  <div class="cart__form__top">
+                    <div class="cart__form__row">
+                      <div class="cart__form__col">
+                        <input type="text" class="input">
+                        <label class="label">Введите ваше имя</label>
+                      </div>
+                      <div class="cart__form__col">
+                        <input type="text" class="input">
+                        <label class="label">Введите вашу фамилию</label>
+                      </div>
+                    </div>
+                    <div class="cart__form__row">
+                      <div class="cart__form__col">
+                        <input type="tel" value="+7" class="input phone-mask">
+                        <label class="label">Введите ваш телефон</label>
+                      </div>
+                      <div class="cart__form__col">
+                        <input type="email" class="input">
+                        <label class="label">Введите email</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="cart__form__checkboxes">
+                    <div class="cart__form__title">
+                      Получить билеты
+                    </div>
+                    <div class="cart__form__checkboxes__wrap">
+                      <label class="checkbox normal-checkbox">
+                        <input type="checkbox">
+                        <span class="checkbox-label"></span>
+                        По смс
+                      </label>
+                      <label class="checkbox normal-checkbox">
+                        <input type="checkbox">
+                        <span class="checkbox-label"></span>
+                        На почту
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="cart__form__checkboxes">
+                    <div class="cart__form__title">
+                      Дополнительно
+                    </div>
+                    <div class="cart__form__checkboxes__wrap">
+                      <label class="checkbox normal-checkbox">
+                        <input type="checkbox">
+                        <span class="checkbox-label"></span>
+                        Я — болельщик команды гостей и не хочу получить рассылки и уведомления
+                      </label>
+                    </div>
+                    <br>
+                    <div class="cart__form__row">
+                      <div class="cart__form__col">
+                        <input type="text" class="input" placeholder="Введите промокод">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="cart__form__bot">
+                    <div class="cart__form__bot__wrap">
+                      <div class="cart__form__title">
+                        К оплате
+                      </div>
+                      <div class="price">
+                        800 ₽
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-red cart__form__submite">Оформить заказ</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+      <section class="shop-section shop-section--cart">
+        <div class="container-fluid">
+          <div class="custom-slider-content">
+            <div class="custom-slider-container">
+              <div class="custom-slider-title">
+                <div class="custom-slider-title-content">
+                  Товары<br>
+                  со скидкой
+                </div>
+              </div>
+              <div class="custom-slider-wrap">
+                <div class="swiper custom-slider goods-slider swiper-initialized swiper-horizontal swiper-pointer-events" style="min-width: 1204.4px;">
+                  <div class="swiper-wrapper" id="swiper-wrapper-bf743d2d6a1c01e5" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
+                    <a href="#" class="swiper-slide good-slide good-item swiper-slide-active" style="margin-right: 30px;" role="group" aria-label="1 / 6">
+                      <div class="good-item-img-wrap">
+                        <img src="./img/good-1.png" class="good-item-img" alt="">
+                        <div class="good-item-label label-new">New</div>
+                      </div>
+                      <div class="good-item-price">
+                        <div class="price-current">1 032 ₽</div>
+                        <div class="price-old">1 290 ₽</div>
+                        <div class="discount">-20%</div>
+                      </div>
+                      <div class="good-item-title">
+                        Бейсболка «FCLM»
+                      </div>
+                    </a>
+                    <a href="#" class="swiper-slide good-slide good-item swiper-slide-next" style="margin-right: 30px;" role="group" aria-label="2 / 6">
+                      <div class="good-item-img-wrap">
+                        <img src="./img/good-2.png" class="good-item-img" alt="">
+                        <div class="good-item-label label-new">New</div>
+                      </div>
+                      <div class="good-item-price">
+                        <div class="price-current">5 990 ₽</div>
+                      </div>
+                      <div class="good-item-title">
+                        Игровая футболка 2021/22
+                      </div>
+                    </a>
+                    <a href="#" class="swiper-slide good-slide good-item" style="margin-right: 30px;" role="group" aria-label="3 / 6">
+                      <div class="good-item-img-wrap">
+                        <img src="./img/good-3.png" class="good-item-img" alt="">
+                        <div class="good-item-label label-new">New</div>
+                      </div>
+                      <div class="good-item-price">
+                        <div class="price-current">5 990 ₽</div>
+                      </div>
+                      <div class="good-item-title">
+                        Игровая футболка 2021/22
+                      </div>
+                    </a>
+                    <a href="#" class="swiper-slide good-slide good-item" style="margin-right: 30px;" role="group" aria-label="4 / 6">
+                      <div class="good-item-img-wrap">
+                        <img src="./img/good-1.png" class="good-item-img" alt="">
+                        <div class="good-item-label label-new">New</div>
+                      </div>
+                      <div class="good-item-price">
+                        <div class="price-current">1 032 ₽</div>
+                        <div class="price-old">1 290 ₽</div>
+                        <div class="discount">-20%</div>
+                      </div>
+                      <div class="good-item-title">
+                        Бейсболка «FCLM»
+                      </div>
+                    </a>
+                    <a href="#" class="swiper-slide good-slide good-item" style="margin-right: 30px;" role="group" aria-label="5 / 6">
+                      <div class="good-item-img-wrap">
+                        <img src="./img/good-2.png" class="good-item-img" alt="">
+                        <div class="good-item-label label-new">New</div>
+                      </div>
+                      <div class="good-item-price">
+                        <div class="price-current">5 990 ₽</div>
+                      </div>
+                      <div class="good-item-title">
+                        Игровая футболка 2021/22
+                      </div>
+                    </a>
+                    <a href="#" class="swiper-slide good-slide good-item" style="margin-right: 30px;" role="group" aria-label="6 / 6">
+                      <div class="good-item-img-wrap">
+                        <img src="./img/good-3.png" class="good-item-img" alt="">
+                        <div class="good-item-label label-new">New</div>
+                      </div>
+                      <div class="good-item-price">
+                        <div class="price-current">5 990 ₽</div>
+                      </div>
+                      <div class="good-item-title">
+                        Игровая футболка 2021/22
+                      </div>
+                    </a>
+                  </div>
+                  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                </div>
+              </div>
+            </div>
+            <div class="custom-slider-bottom">
+              <div class="slider-bottom-btn">
+                <a href="#" class="btn btn-red">все товары</a>
+              </div>
+              <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span></div>
+              <div class="swiper-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-bf743d2d6a1c01e5" aria-disabled="false"><span class="icon-arrow-right"></span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+
+   
+    @include('partials/footer.html')
+  </div>
+
+  <script type="text/javascript" src="js/vendor.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+
+</html>

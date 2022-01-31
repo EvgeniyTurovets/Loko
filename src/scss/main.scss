@@ -1526,7 +1526,7 @@
     align-items: center;
     justify-content: center;
     padding-top: 69px;
-    padding-bottom: 113px;
+    padding-bottom:69px;
     color: #fff;
     .t{
         font-weight: bold;
@@ -1895,3 +1895,5 @@
         }
     }
 }
+
+@import './components/cart.scss';
