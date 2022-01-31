@@ -20,5 +20,32 @@ $(document).ready(function(){
         autoplay: {
             delay: 2000,
         },
-      });
+    });
+
+    $('.pre-total-open').on('click', function(){
+        if($(this).hasClass('active')){
+            $('.pre-total-open').removeClass('active')
+            $('.prof-bot__pretotal').slideUp(300)
+        }else{
+            $('.pre-total-open').removeClass('active')
+            $(this).addClass('active')
+            $('.prof-bot__pretotal').slideUp(300)
+            $(this).closest('.prof-bot__tbody__tr').next('.prof-bot__pretotal').slideDown(300)
+        } 
+    })
+
+    $('.prof-bot__table--bileti .prof-bot__tbody__tr').on('click', function(e){
+        if($(window).width() < 768){
+            if($(this).hasClass('active')){
+                $('.prof-bot__table--bileti .prof-bot__tbody__tr').removeClass('active')
+                $('.prof-bot__pretotal').slideUp(300)
+            }else{
+                $(this).addClass('active')
+                $('.prof-bot__pretotal').slideUp(300)
+                $(this).next('.prof-bot__pretotal').slideDown(300)
+            }
+           
+            
+        }
+    })
 })

@@ -136,7 +136,9 @@
                     <nav class="prof-bot__nav">
                         <ul>
                             <li>
-                                <a href="">Профиль</a>
+                                <a href="" >Профиль
+                                    <span>2</span>
+                                </a>
                             </li>
                             <li>
                                 <a href="">клубная карта</a>
@@ -148,10 +150,10 @@
                                 <a href="">Билеты</a>
                             </li>
                             <li>
-                                <a href="" class="active">Атрибутика</a>
+                                <a href="">Атрибутика</a>
                             </li>
                             <li>
-                                <a href="">Уведомления <span>1</span></a>
+                                <a href=""  class="active">Уведомления <span>1</span></a>
                             </li>
                             <li>
                                 <a href="">Задать вопрос</a>
@@ -160,9 +162,10 @@
                     </nav>
                 </div>
                 <div class="prof-bot__right">
-                    <div class="prof_bot__title">Список покупок</div>
+                    <div class="prof_bot__title">Уведомления</div>
+                    
                     <div class="prof-bot__wrap">
-                        <div class="prof-bot__table">
+                        <div class="prof-bot__table prof-bot__table--notif-list">
                             <div class="prof-bot__thead">
                                 <div class="td col-1">
                                     №
@@ -173,15 +176,15 @@
                                 </div>
                             
                                 <div class="td col-3">
-                                    Номер заказа
+                                    Приоритет
                                 </div>
                             
-                                <div class="td center col-4">
-                                    Список покупок
+                                <div class="td col-4">
+                                    Тема сообщения
                                 </div>
                             
-                                <div class="td text-right col-5">
-                                    Сумма
+                                <div class="td col-5">
+                                    Стутус
                                 </div>
                             
                                 <div class="td col-6"></div>
@@ -197,30 +200,15 @@
                                     </div>
                                 
                                     <div class="td col-3">
-                                        <div class="name">ЦСКА</div>
+                                        <div class="notif-important">Важное</div>
                                     </div>
                                 
                                     <div class="td col-4">
-                                        <div class="td-imgs">
-                                            <div class="img" style="background-image: url('./img/good-1.png');"></div>
-                                            <div class="img" style="background-image: url('./img/good-2.png');"></div>
-                                            <div class="img" style="background-image: url('./img/good-3.png');"></div>
-                                            <div class="img" style="background-image: url('./img/good-1.png');"></div>
-                                            <div class="plus">
-                                                <span>+</span>9
-                                            </div>
-                                        </div>
+                                        <div class="data">Обращение в службу поддержки</div>
                                     </div>
                                 
                                     <div class="td col-5">
-                                        <div class="price-block">
-                                            <div class="price">
-                                                1600 <span>₽</span>
-                                            </div>
-                                            <div class="bal">
-                                                +12 баллов
-                                            </div>
-                                        </div>
+                                        <div class="notif-status">Прочтено</div>
                                     </div>
                                     <div class="td col-6">
                                         <a class="link pre-total-open" href="javascript:">
@@ -232,25 +220,31 @@
                                 </div>
                                 <div class="prof-bot__pretotal">
                                     <div class="prof-bot__pretotal__wrap">
-                                        <div class="col">
-                                            <div class="t1">Способ доставки:</div>
-                                            <div class="t2">Самовывоз</div>
+                                        <div class="notif-list-text">
+                                            <div class="text">Служба поддержки:</div>
+                                            <p>
+                                                Быть частью большого события, ощущать неповторимую атмосферу футбольного матча, получать эмоции от игры...
+                                            </p>
+                                            <p>
+                                                В наших ложах вы можете не только с комфортом смотреть матчи, но и проводить деловые встречи, устраивать торжества – ложа доступна в любой день на протяжении всего срока аренды.
+                                            </p>
+                                            <p>
+                                                Наслаждайтесь матчем в компании друзей, удивляйте коллег и партнёров.
+                                            </p>
                                         </div>
-                                        <div class="col">
-                                            <div class="t1">Стоимость доставки</div>
-                                            <div class="t2">135 руб.</div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="t1">Способ оплаты</div>
-                                            <div class="t2">онлайн</div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="t1">Баллов начисленно:</div>
-                                            <div class="t2">13 баллов</div>
-                                        </div>
-                                    </div>
-                                    <div class="prof-bot__pretotal__link">
-                                        <a href="" class="">Оформить возврат</a>
+                                        <form class="notif-list__send">
+                                            <div class="notif-list__send__left">
+                                                <textarea></textarea>
+                                                <div class="text">Ваш ответ</div>
+                                            </div>
+                                            <div class="notif-list__send__right">
+                                                <button type="submit" class="btn btn-red">
+                                                    <svg width="12px" height="15px">
+                                                        <use xlink:href="./img/sprite.svg#arr-down"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                                 <div class="prof-bot__tbody__tr">
@@ -263,27 +257,15 @@
                                     </div>
                                 
                                     <div class="td col-3">
-                                        <div class="name">ЦСКА</div>
+                                        <div class="notif-important">Важное</div>
                                     </div>
                                 
                                     <div class="td col-4">
-                                        <div class="td-imgs">
-                                            <div class="img" style="background-image: url('./img/good-1.png');"></div>
-                                            <div class="img" style="background-image: url('./img/good-2.png');"></div>
-                                            <div class="img" style="background-image: url('./img/good-3.png');"></div>
-                                            
-                                        </div>
+                                        <div class="data">Обращение в службу поддержки</div>
                                     </div>
                                 
                                     <div class="td col-5">
-                                        <div class="price-block">
-                                            <div class="price">
-                                                1600 <span>₽</span>
-                                            </div>
-                                            <div class="bal">
-                                                +12 баллов
-                                            </div>
-                                        </div>
+                                        <div class="notif-status notif-status--red">Непрочитано</div>
                                     </div>
                                     <div class="td col-6">
                                         <a class="link pre-total-open" href="javascript:">
@@ -295,89 +277,38 @@
                                 </div>
                                 <div class="prof-bot__pretotal">
                                     <div class="prof-bot__pretotal__wrap">
-                                        <div class="col">
-                                            <div class="t1">Способ доставки:</div>
-                                            <div class="t2">Самовывоз</div>
+                                        <div class="notif-list-text">
+                                            <div class="text">Служба поддержки:</div>
+                                            <p>
+                                                Быть частью большого события, ощущать неповторимую атмосферу футбольного матча, получать эмоции от игры...
+                                            </p>
+                                            <p>
+                                                В наших ложах вы можете не только с комфортом смотреть матчи, но и проводить деловые встречи, устраивать торжества – ложа доступна в любой день на протяжении всего срока аренды.
+                                            </p>
+                                            <p>
+                                                Наслаждайтесь матчем в компании друзей, удивляйте коллег и партнёров.
+                                            </p>
                                         </div>
-                                        <div class="col">
-                                            <div class="t1">Стоимость доставки</div>
-                                            <div class="t2">135 руб.</div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="t1">Способ оплаты</div>
-                                            <div class="t2">онлайн</div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="t1">Баллов начисленно:</div>
-                                            <div class="t2">13 баллов</div>
-                                        </div>
-                                    </div>
-                                    <div class="prof-bot__pretotal__link">
-                                        <a href="" class="">Оформить возврат</a>
-                                    </div>
-                                </div>
-                                <div class="prof-bot__tbody__tr">
-                                    <div class="td col-1">
-                                        <div class="num">12</div>
-                                    </div>
-                                
-                                    <div class="td col-2">
-                                        <div class="data">24.05.2020</div>
-                                    </div>
-                                
-                                    <div class="td col-3">
-                                        <div class="name">ЦСКА</div>
-                                    </div>
-                                
-                                    <div class="td col-4">
-                                        <div class="td-imgs">
-                                            <div class="img" style="background-image: url('./img/good-1.png');"></div>
-                                        </div>
-                                    </div>
-                                
-                                    <div class="td col-5">
-                                        <div class="not-price">
-                                            Не оплачен
-                                        </div>
-                                    </div>
-                                    <div class="td col-6">
-                                        <a class="link pre-total-open" href="javascript:">
-                                            <svg height="14px" width="9px">
-                                                <use xlink:href="./img/sprite.svg#arr-down"></use>
-                                            </svg>
-                                        </a>
+                                        <form class="notif-list__send">
+                                            <div class="notif-list__send__left">
+                                                <textarea></textarea>
+                                                <div class="text">Ваш ответ</div>
+                                            </div>
+                                            <div class="notif-list__send__right">
+                                                <button type="submit" class="btn btn-red">
+                                                    <svg width="12px" height="15px">
+                                                        <use xlink:href="./img/sprite.svg#arr-down"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
-                                <div class="prof-bot__pretotal">
-                                    <div class="prof-bot__pretotal__wrap">
-                                        <div class="col">
-                                            <div class="t1">Способ доставки:</div>
-                                            <div class="t2">Самовывоз</div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="t1">Стоимость доставки</div>
-                                            <div class="t2">135 руб.</div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="t1">Способ оплаты</div>
-                                            <div class="t2">онлайн</div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="t1">Баллов начисленно:</div>
-                                            <div class="t2">13 баллов</div>
-                                        </div>
-                                    </div>
-                                    <div class="prof-bot__pretotal__link">
-                                        <a href="" class="">Оформить возврат</a>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
-                        <div class="prof-bot__total">
-                            Начислено:
-                            <span>3 000 баллоВ</span>
-                        </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
