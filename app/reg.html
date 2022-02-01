@@ -122,39 +122,163 @@
 
     <main class="page-content">
 
-      <div class="page-top-img">
-        <img src="images/top-bck.jpg" alt="">
-      </div>
       <div class="container-fluid">
+        <div class="personal">
+            <div class="personal__title">Регистрация</div>
+            <form class="personal__form">
+                <div class="personal__form__wrap">
+                    <div class="personal__form__top">
+                        <div class="col">
+                            <span>Общая информация</span>
+                        </div>
+                        <div class="col">
+                            <a href="">Вход с паролем</a>
+                        </div>
+                    </div>
+                    <div class="personal__form__row">
+                        <input type="text" placeholder="Иванов">
+                        <label class="label">
+                            Фамилия
+                        </label>
+                    </div>
+                    <div class="personal__form__row">
+                        <input type="text" placeholder="Иван">
+                        <label class="label">
+                            Имя*
+                        </label>
+                    </div>
+                    <div class="personal__form__row">
+                        <input type="text" placeholder="Иванович">
+                        <label class="label">
+                            Отчество*
+                        </label>
+                    </div>
+                    <div class="personal__form__row">
+                        <select class="custom-select" data-placeholder="Мужской ">
+                            <option value=""></option>
+                            <option>Мужской</option>
+                            <option>Женский</option>
+                        </select>
+                        <label class="label">
+                            Пол*
+                        </label>
+                    </div>
+                    <div class="personal__form__row">
+                        <input type="tel" class="phone-mask-personal" placeholder="+7 (***) *** ** **">
+                        <label class="label">
+                            Введите ваш номер телефона*
+                        </label>
+                    </div>
+                    <div class="personal__form__row">
+                        <input type="tel" class="input-data" placeholder="12.12.1992">
+                        <label class="label">
+                            Дата рождения
+                        </label>
+                    </div>
+                    <div class="personal__form__row">
+                        <select class="custom-select" data-placeholder="Выберите город">
+                            <option value=""></option>
+                            <option>Город 1</option>
+                            <option>Город 2</option>
+                            <option>Город 3</option>
 
-        <div class="persons-list">
+                        </select>
+                        <label class="label">
+                            Населенный пункт
+                        </label>
+                    </div>
+                    <div class="personal__checkbox">
+                        <label>
+                            <input type="checkbox" checked>
+                            <span></span>
+                            Наличие детей
+                        </label>
+                    </div>
+                    <div class="personal__form__row">
+                        <input type="email"  placeholder="email@example.ru">
+                        <label class="label">
+                            E-mail*
+                        </label>
+                    </div>
+                    <div class="personal__form__row personal__form__row--password">
+                        <input type="password"  placeholder="***************">
+                        <label class="label">
+                            Пароль
+                        </label>
+                        <button type="button" class="personal__form__show-pass">
+                            <svg height="24px" width="24px" class="show-pass">
+                                <use xlink:href="./img/sprite.svg#show-pass"></use>
+                            </svg>
+                            <svg height="24px" width="24px" class="hide-pass">
+                                <use xlink:href="./img/sprite.svg#hide-pass"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="personal__form__row personal__form__row--password">
+                        <input type="password"  placeholder="***************">
+                        <label class="label">
+                            Подтверждение пароля
+                        </label>
+                        <button type="button" class="personal__form__show-pass">
+                            <svg height="24px" width="24px" class="show-pass">
+                                <use xlink:href="./img/sprite.svg#show-pass"></use>
+                            </svg>
+                            <svg height="24px" width="24px" class="hide-pass">
+                                <use xlink:href="./img/sprite.svg#hide-pass"></use>
+                            </svg>
+                        </button>
+                    </div>
 
-          <div class="news-nav">
-            <nav class="page-sub-menu">
-              <ul>
-                <li><a href="sale.html" target="_blank">Покупки</a></li>
-                <li><a href="sale-empty.html" target="_blank">Покупки пусто</a></li>
-                <li><a href="profile.html" target="_blank">Профиль</a></li>
-                <li><a href="abonement.html" target="_blank">Абонемент</a></li>
-                <li><a href="cabinet.html" target="_blank">Билеты</a></li>
-                <li><a href="notifications.html" target="_blank">Уведомления</a></li>
-                <li><a href="notifications-list.html" target="_blank">Уведомления список</a></li>
-                <li><a href="club-carta.html" target="_blank">клубная карта</a></li>
-                <li><a href="cart.html" target="_blank">Корзина</a></li>
-                <li><a href="reg.html" target="_blank">Регистрация</a></li>
-                <li><a href="login.html" target="_blank">вход</a></li>
-                <li><a href="reset-pass.html" target="_blank">Сброс пароля</a></li>
-                <li><a href="feedback.html" target="_blank">Сброс пароля</a></li>
-              </ul>
-            </nav>
-          </div>
+                    <div class="personal__form__info">
+                        <label class="label">*Обязательно для заполнения</label>
+                    </div>
+                    
+                    <div class="personal__form__bot">
+                        <div class="personal__checkbox personal__checkbox--quadro">
+                            <label>
+                                <input type="checkbox" checked>
+                                <span></span>
+                                Соглашаюсь с Политикой в отношении<br>
+                                обработки персональных данных
+                            </label>
+                        </div>
+                        <div class="personal__checkbox personal__checkbox--quadro">
+                            <label>
+                                <input type="checkbox" checked>
+                                <span></span>
+                                Соглашаюсь на коммуникацию<br>
+                                со мной по электронной почте
+                            </label>
+                        </div>
+                        <div class="personal__checkbox personal__checkbox--quadro">
+                            <label>
+                                <input type="checkbox" checked>
+                                <span></span>
+                                Соглашаюсь на коммуникацию со мной по СМС
+                            </label>
+                        </div>
+                        <div class="personal__checkbox personal__checkbox--quadro">
+                            <label>
+                                <input type="checkbox" checked>
+                                <span></span>
+                                Соглашаюсь c условиями участия в программе лояльности
+                            </label>
+                        </div>
+                    </div>
 
+                    <div class="personal__form__submite">
+                        <button type="submit" class="btn btn-red">ЗАРЕГЕСТРИРОВАТЬСЯ</button>
+                    </div>
+                </div>
+                <div class="personal__form__after">© 1999-2021 FCLM.RU Футбольный клуб «Локомотив», Москва<br>
+                    При полном или частичном использовании материалов ссылка на официальный сайт ФК «Локомотив» обязательна.</div>
+            </form>
         </div>
-
       </div>
-
+      
     </main>
 
+    
     <footer class="footer">
   <div class="container-fluid">
     <form class="footer-subscribe" method="post">

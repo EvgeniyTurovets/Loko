@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>New site</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div class="page-wrap">
+    @include('partials/header.html')
+
+    <main class="page-content">
+
+      <div class="container-fluid">
+        <div class="personal">
+            <div class="personal__title">Сброс пароля</div>
+            <form class="personal__form">
+                <div class="personal__form__wrap">
+                    <div class="personal__form__top2">
+                        <div class="personal__form__top">
+                            <div class="col">
+                                <span>Общая информация</span>
+                            </div>
+                            <div class="col">
+                                <a href="">Регистрация</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   
+                    <div class="personal__form__row">
+                        <input type="email"  placeholder="email@example.ru">
+                        <label class="label">
+                            Электронная  почта
+                        </label>
+                    </div>
+                    
+
+                    <div class="personal__form__submite">
+                        <button type="submit" class="btn btn-red">Востановить пароль</button>
+                    </div>
+                </div>
+                <div class="personal__form__after">© 1999-2021 FCLM.RU Футбольный клуб «Локомотив», Москва<br>
+                    При полном или частичном использовании материалов ссылка на официальный сайт ФК «Локомотив» обязательна.</div>
+            </form>
+        </div>
+      </div>
+      
+    </main>
+
+    
+    @include('partials/footer.html')
+  </div>
+
+  <script type="text/javascript" src="js/vendor.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+
+</html>

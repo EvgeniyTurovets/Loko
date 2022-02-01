@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>New site</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div class="page-wrap">
+    @include('partials/header.html')
+
+    <main class="page-content">
+
+      <div class="container-fluid">
+        <div class="personal">
+            <div class="personal__title">Вход</div>
+            <form class="personal__form">
+                <div class="personal__form__wrap">
+                    <div class="personal__form__top2">
+                        <div class="personal__form__top">
+                            <div class="col">
+                                <span>Общая информация</span>
+                            </div>
+                            <div class="col">
+                                <a href="">Регистрация</a>
+                            </div>
+                        </div>
+                        <div class="alt"><a href="">Войти по номеру телефона</a></div>
+                    </div>
+                    
+                   
+                    <div class="personal__form__row">
+                        <input type="email"  placeholder="email@example.ru">
+                        <label class="label">
+                            Электронная  почта
+                        </label>
+                    </div>
+                    <div class="personal__form__row personal__form__row--password">
+                        <input type="password"  placeholder="***************">
+                        <label class="label">
+                            Пароль
+                        </label>
+                        <!-- <button type="button" class="personal__form__show-pass">
+                            <svg height="24px" width="24px" class="show-pass">
+                                <use xlink:href="./img/sprite.svg#show-pass"></use>
+                            </svg>
+                            <svg height="24px" width="24px" class="hide-pass">
+                                <use xlink:href="./img/sprite.svg#hide-pass"></use>
+                            </svg>
+                        </button> -->
+                    </div>
+
+                    <div class="personal__form__bot-row">
+                        <div class="personal__checkbox">
+                            <label>
+                                <input type="checkbox" checked>
+                                <span></span>
+                                Запомнить меня
+                            </label>
+                        </div>
+                        <a href="">Забыли пароль?</a>
+                    </div>
+                    
+
+
+                    <div class="personal__form__submite">
+                        <button type="submit" class="btn btn-red">Продолжить</button>
+                    </div>
+                </div>
+                <div class="personal__form__after">© 1999-2021 FCLM.RU Футбольный клуб «Локомотив», Москва<br>
+                    При полном или частичном использовании материалов ссылка на официальный сайт ФК «Локомотив» обязательна.</div>
+            </form>
+        </div>
+      </div>
+      
+    </main>
+
+    
+    @include('partials/footer.html')
+  </div>
+
+  <script type="text/javascript" src="js/vendor.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+
+</html>

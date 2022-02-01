@@ -122,39 +122,93 @@
 
     <main class="page-content">
 
-      <div class="page-top-img">
-        <img src="images/top-bck.jpg" alt="">
-      </div>
       <div class="container-fluid">
+        <div class="personal">
+            <div class="personal__title">Обратная связь</div>
+            <form class="personal__form">
+                <div class="personal__form__wrap">
+                    
+                    <div class="personal__form__row">
+                        <input type="text" placeholder="Иванов">
+                        <label class="label">
+                            Фамилия
+                        </label>
+                    </div>
+                    <div class="personal__form__row">
+                        <input type="text" placeholder="Иван">
+                        <label class="label">
+                            Имя*
+                        </label>
+                    </div>
+                    
+                    <div class="personal__form__row">
+                        <input type="email"  placeholder="email@example.ru">
+                        <label class="label">
+                            E-mail*
+                        </label>
+                    </div>
 
-        <div class="persons-list">
+                    <div class="personal__form__row">
+                        <input type="tel" class="phone-mask-personal" placeholder="+7 (***) *** ** **">
+                        <label class="label">
+                            Введите ваш номер телефона*
+                        </label>
+                    </div>
 
-          <div class="news-nav">
-            <nav class="page-sub-menu">
-              <ul>
-                <li><a href="sale.html" target="_blank">Покупки</a></li>
-                <li><a href="sale-empty.html" target="_blank">Покупки пусто</a></li>
-                <li><a href="profile.html" target="_blank">Профиль</a></li>
-                <li><a href="abonement.html" target="_blank">Абонемент</a></li>
-                <li><a href="cabinet.html" target="_blank">Билеты</a></li>
-                <li><a href="notifications.html" target="_blank">Уведомления</a></li>
-                <li><a href="notifications-list.html" target="_blank">Уведомления список</a></li>
-                <li><a href="club-carta.html" target="_blank">клубная карта</a></li>
-                <li><a href="cart.html" target="_blank">Корзина</a></li>
-                <li><a href="reg.html" target="_blank">Регистрация</a></li>
-                <li><a href="login.html" target="_blank">вход</a></li>
-                <li><a href="reset-pass.html" target="_blank">Сброс пароля</a></li>
-                <li><a href="feedback.html" target="_blank">Сброс пароля</a></li>
-              </ul>
-            </nav>
-          </div>
+                    <div class="personal__form__row">
+                        <input type="tel" class="cart-input-mask" placeholder="ххх-ххх-ххх-ххх">
+                        <label class="label">
+                            Номер клубной карты
+                        </label>
+                    </div>
 
+                    <div class="personal__form__row">
+                        <select class="custom-select" data-placeholder="Покупка билетов ">
+                            <option value=""></option>
+                            <option>категория 1</option>
+                            <option>категория 2</option>
+                            <option>категория 3</option>
+                        </select>
+                        <label class="label">
+                            Выберите категорию
+                        </label>
+                    </div>
+
+                    <div class="personal__form__row">
+                        <textarea></textarea>
+                        <label class="label">
+                            Ваше обращение
+                        </label>
+                    </div>
+
+                    <div class="personal__form__row">
+                        <label class="upload">
+                            <input type="file">
+                            <div class="text">Перетащите сюда файл или загрузите</div>
+                        </label>
+                        <div class="upload-text">Загрузите сопроводительное письмо (фотография или видео), не более 10 mb.</div>
+                    </div>
+                
+
+                    <div class="personal__form__info">
+                        <label class="label">*Обязательно для заполнения</label>
+                    </div>
+                    
+                    <br><br>                    
+
+                    <div class="personal__form__submite">
+                        <button type="submit" class="btn btn-red">ЗАРЕГЕСТРИРОВАТЬСЯ</button>
+                    </div>
+                </div>
+                <div class="personal__form__after">© 1999-2021 FCLM.RU Футбольный клуб «Локомотив», Москва<br>
+                    При полном или частичном использовании материалов ссылка на официальный сайт ФК «Локомотив» обязательна.</div>
+            </form>
         </div>
-
       </div>
-
+      
     </main>
 
+    
     <footer class="footer">
   <div class="container-fluid">
     <form class="footer-subscribe" method="post">

@@ -50,4 +50,22 @@ $(document).ready(function(){
     })
 
     $('.phone-mask').inputmask({mask: "+7 999 999 9999", "placeholder": ""});
+    $('.phone-mask-personal').inputmask({mask: "+7 (***) *** ** **","placeholder": "+7 (***) *** ** **"});
+    $('.input-data').inputmask({mask: "99.99.9999"});
+    $('.cart-input-mask').inputmask({mask: "999-999-999-999",});
+  
+    $('.personal__form__show-pass').on('click', function(){
+        if($(this).hasClass('active')){
+            $(this).closest('.personal__form__row--password').find('input').attr('type', 'password')
+            $(this).toggleClass('active')
+        }else{
+            $(this).closest('.personal__form__row--password').find('input').attr('type', 'text')
+            $(this).toggleClass('active')
+        }
+    })
+
+    $('.upload input').on('change', function(e){
+        var filename = $(this)[0].files.length ? $(this)[0].files[0].name : "";
+        $(this).closest('.upload').find('.text').text(filename)
+    })
 })
