@@ -68,4 +68,9 @@ $(document).ready(function(){
         var filename = $(this)[0].files.length ? $(this)[0].files[0].name : "";
         $(this).closest('.upload').find('.text').text(filename)
     })
+
+    $('.faq__top').on('click', function(){
+        $(this).next('.faq__content').slideToggle(300)
+        $(this).toggleClass('active')
+    })
 })

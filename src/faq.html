@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>New site</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div class="page-wrap">
+    @include('partials/header.html')
+
+    <main class="page-content">
+
+      <div class="page-top-img">
+        <img src="./img/top-bck.jpg" alt="">
+      </div>
+      <div class="container-fluid">
+        <div class="prof">
+            <div class="faq">
+                <div class="page-section-header">
+                    <h2>
+                      <span class="green-text">FAQ</span>
+                    </h2>
+                </div>
+                <div class="faq__title">
+                    Ответы на самые частые вопрос
+                </div>
+                <div class="faq__wrap">
+                    <div class="faq__row">
+                        <div class="faq__top">
+                            Вопрос №1
+                            <button class="btn btn-red">
+                                <svg class="plus" height="20px" width="20px">
+                                    <use xlink:href="./img/sprite.svg#plus"></use>
+                                </svg>
+                                <svg class="minus" height="20px" width="20px">
+                                    <use xlink:href="./img/sprite.svg#minus"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="faq__content">
+                            <div class="faq__content__wrap">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque debitis fuga, laborum quibusdam autem maxime, eligendi placeat odit sed iste eum obcaecati perferendis accusantium ipsam consectetur. Iste assumenda aut aliquam!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__row">
+                        <div class="faq__top">
+                            Вопрос №1
+                            <button class="btn btn-red">
+                                <svg class="plus" height="20px" width="20px">
+                                    <use xlink:href="./img/sprite.svg#plus"></use>
+                                </svg>
+                                <svg class="minus" height="20px" width="20px">
+                                    <use xlink:href="./img/sprite.svg#minus"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="faq__content">
+                            <div class="faq__content__wrap">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque debitis fuga, laborum quibusdam autem maxime, eligendi placeat odit sed iste eum obcaecati perferendis accusantium ipsam consectetur. Iste assumenda aut aliquam!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__row">
+                        <div class="faq__top">
+                            Очень длиный вопрос где очень много слов  №199912 Очень длиный вопрос где очень много слов  №199912
+                            <button class="btn btn-red">
+                                <svg class="plus" height="20px" width="20px">
+                                    <use xlink:href="./img/sprite.svg#plus"></use>
+                                </svg>
+                                <svg class="minus" height="20px" width="20px">
+                                    <use xlink:href="./img/sprite.svg#minus"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="faq__content">
+                            <div class="faq__content__wrap">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque debitis fuga, laborum quibusdam autem maxime, eligendi placeat odit sed iste eum obcaecati perferendis accusantium ipsam consectetur. Iste assumenda aut aliquam!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    </main>
+
+    @include('partials/footer.html')
+  </div>
+
+  <script type="text/javascript" src="js/vendor.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+
+</html>
