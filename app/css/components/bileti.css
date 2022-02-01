@@ -1,0 +1,65 @@
+.bileti__data {
+  padding-top: 44px;
+  padding-bottom: 44px;
+  background: #102120;
+}
+
+.bileti__data.schedule .schedule-row .match {
+  max-width: initial;
+}
+
+.bileti__data.schedule .schedule-row .info {
+  flex: none;
+  margin-right: 0;
+}
+
+.bileti__data__title {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 110%;
+  color: #FFFFFF;
+  font-family: var(--font);
+  margin-bottom: 40px;
+}
+
+.bileti__data__list {
+  margin-bottom: 70px;
+}
+.bileti__data__list .schedule-section-list {
+  margin-bottom: 10px;
+}
+
+.btn.btn-transparent-back {
+  background-image: url("../img/bileti/btn-back.svg");
+  background-size: 100% 100%;
+}
+
+.btn.btn-transparent-back:focus {
+  color: #fff;
+}
+
+.btn.btn-transparent-back:after {
+  display: none;
+}
+
+.btn.btn-transparent-back:before {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .bileti__data__title {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 374px) {
+  .btn.btn-transparent-back {
+    font-size: 14px;
+  }
+
+  .match-detail-top-info .match-detail-buttons .btn {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=bileti.css.map */
