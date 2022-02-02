@@ -1,0 +1,237 @@
+.page-content-top-wrap {
+  z-index: 1;
+}
+
+.loji-text {
+  position: relative;
+  background-color: #fff;
+}
+.loji-text .container-fluid {
+  position: relative;
+}
+.loji-text .container-fluid:before {
+  content: "";
+  width: 368px;
+  height: 582px;
+  background-image: url("../img/loji/loji-text.png");
+  position: absolute;
+  z-index: 0;
+  right: -50px;
+  opacity: 0.9;
+  top: -90px;
+  transform: translateY(-50%);
+}
+.loji-text .loji-text__wrap {
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 1440px) {
+  .loji-text .container-fluid:before {
+    right: -120px;
+  }
+}
+.loji-text__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+@media (min-width: 991px) {
+  .loji-text .bileti-sposobi__col {
+    width: 33.3333333333%;
+  }
+}
+@media (max-width: 767px) {
+  .loji-text {
+    padding-top: 50px;
+    margin-top: -60px;
+  }
+}
+.news-section--yourget {
+  margin: 0;
+  padding: 100px 0;
+}
+.news-section--yourget .news-item-img-wrap {
+  height: 169px;
+}
+.news-section--yourget .news-item-img {
+  height: 169px;
+}
+.news-section--yourget .news-item-text {
+  margin-left: 20px;
+}
+.news-section--yourget .news-item-caption {
+  padding: 20px;
+}
+
+@media (max-width: 767px) {
+  .news-section--yourget {
+    padding: 50px 0;
+  }
+}
+@media (max-width: 540px) {
+  .news-section--yourget .news-item-img-wrap {
+    min-height: 169px;
+  }
+}
+.big-foto {
+  position: relative;
+  margin-bottom: 100px;
+}
+.big-foto .swiper-slide {
+  width: auto;
+}
+
+.big-foto__slider__img {
+  max-width: 1070px;
+  width: 100%;
+  margin: 0 auto;
+}
+.big-foto__slider__img img {
+  display: block;
+  max-width: 100%;
+}
+
+.big-foto__slider-nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+.big-foto__slider-nav .swiper-next {
+  margin-left: 90px;
+}
+
+@media (max-width: 1200px) {
+  .big-foto__slider__img {
+    padding: 0 30px;
+  }
+
+  .big-foto .swiper-slide {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .big-foto__slider__img {
+    padding: 0 20px;
+  }
+
+  .big-foto__slider-nav .swiper-next {
+    margin-left: 70px;
+  }
+
+  .big-foto {
+    margin-bottom: 50px;
+  }
+}
+.loji-backcall {
+  padding-top: 130px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.loji-backcall__wrap {
+  display: flex;
+}
+
+.loji-backcall__form {
+  background: #FFFFFF;
+  box-shadow: 0px 60px 60px -10px rgba(32, 56, 55, 0.4);
+  padding: 32px;
+  flex: 0 0 365px;
+  margin-right: 75px;
+}
+
+.loji-backcall__form__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #3E414A;
+  margin-bottom: 29px;
+}
+
+.loji-backcall__form__row {
+  margin-bottom: 37px;
+}
+
+.loji-backcall__form .btn {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.loji-backcall__copy {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #72727C;
+}
+
+.loji-backcall__text p {
+  font-size: 20px;
+  line-height: 160%;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #3E414A;
+}
+
+.loji-backcall__text a {
+  color: #348D8B;
+}
+
+.loji-backcall__text a:hover {
+  color: #e33046;
+}
+
+@media (max-width: 991px) {
+  .loji-backcall__form {
+    margin-right: 30px;
+    flex: 0 0 320px;
+    padding: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .loji-backcall__wrap {
+    flex-direction: column;
+  }
+
+  .loji-backcall__form {
+    flex: none;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .loji-backcall {
+    padding-top: 75px;
+  }
+}
+.lojo-images {
+  position: relative;
+}
+.lojo-images .container-fluid {
+  z-index: 2;
+}
+
+.loji-backcall .container-fluid {
+  position: relative;
+  z-index: 2;
+}
+
+.loji-backcall__back {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+}
+
+@media (max-width: 767px) {
+  .loji-backcall__back {
+    display: none;
+  }
+}
+/*# sourceMappingURL=loji.css.map */

@@ -1,6 +1,10 @@
 :root{
     --font: "Bebas Neue", "Arial", sans-serif;
 }
+input::placeholder{
+    color: #A9A9B5;
+    opacity: 0.6;
+}
 .prof{
     padding-top: 50px;
 }
@@ -1895,8 +1899,11 @@
         }
     }
 }
-
+.white-back{
+    background-color: #fff
+}
 @import './components/cart.scss';
 @import './components/personal.scss';
 @import './components/faq.scss';
 @import './components/bileti.scss';
+@import './components/loji.scss';

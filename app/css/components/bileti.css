@@ -210,6 +210,7 @@
   font-feature-settings: "pnum" on, "lnum" on;
   color: #3E414A;
   max-width: 370px;
+  min-height: 48px;
 }
 
 .bileti-sposobi .page-section-header {
@@ -243,7 +244,7 @@
   }
 
   .bileti-sector {
-    padding-top: 100px;
+    padding-top: 50px;
   }
 
   .bileti-sector__img {
@@ -257,6 +258,21 @@
 
   .bileti-sector-sec {
     padding-bottom: 50px;
+  }
+}
+.matches-section--loji {
+  margin-bottom: 0;
+}
+
+.matches-section--loji:before {
+  background-image: url("../img/loji/main-bck-2.png");
+  height: 800px;
+}
+
+@media (max-width: 767px) {
+  .matches-section--loji:before {
+    background-color: #fff;
+    background-image: none;
   }
 }
 /*# sourceMappingURL=bileti.css.map */

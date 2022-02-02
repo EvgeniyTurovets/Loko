@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>New site</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div class="page-wrap">
+    @include('partials/header.html')
+
+    <main class="page-content">
+        <div class="white-back">
+            <div class="page-content-top-wrap">
+                <div class="page-content-top-container">
+                    <div class="page-content-top news-top">
+                        <picture class="main-slide-img">
+                            <!--<source srcset="" media="(max-width: 600px)">-->
+                            <!--<source srcset="" media="(max-width: 900px)">-->
+                            <img src="./img/loji/top-back.png" class="news-top-img" alt="">
+                        </picture>
+                        <div class="page-header">
+                            <h1>
+                                <span class="green-text">VIP</span>
+                                Ложи
+                            </h1>
+                        </div>
+
+                        <div class="detail-share">
+                            <a href="#" class="detail-share-toggle btn btn-red"><span class="icon-share"></span></a>
+                            <div class="share-container">
+                                <div class="share-buttons">
+                                    <button class="button" data-sharer="twitter" data-title="{{ Название }}" data-url="{{ Ссылка }}"><span class="icon-twitter"></span></button>
+                                    <button class="button" data-sharer="vk" data-title="{{ Название }}" data-url="{{ Ссылка }}"><span class="icon-vk"></span></button>
+                                    <button class="button" data-sharer="facebook" data-title="{{ Название }}" data-url="{{ Ссылка }}"><span class="icon-fb"></span></button>
+                                    <button class="button" data-sharer="telegram" data-title="{{ Название }}" data-url="{{ Ссылка }}"><span class="icon-telegram"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <section class="loji-text">
+                <img class="loji-text__back" src="./img/loji/logi-text-back.png">
+                <div class="container-fluid">
+                    <div class="loji-text__wrap">
+                        <h3>Персональная ложа на верхнем уровне арены – самая комфортная зона стадиона.</h3>
+                        <p>
+                            Быть частью большого события, ощущать неповторимую атмосферу футбольного матча,<br> получать эмоции от игры...
+                        </p>
+                        <p>
+                            В наших ложах вы можете не только с комфортом смотреть матчи, но и проводить деловые<br> встречи, устраивать торжества – ложа доступна в любой день на протяжении всего срока<br> аренды.
+                        </p>
+                        <p>
+                            Наслаждайтесь матчем в компании друзей, удивляйте коллег и партнёров.
+                        </p>
+                        <br><br><br>
+                        <h3>
+                            VIP-ложи на «РЖД Арене» – это:
+                        </h3>
+                        <div class="bileti-sposobi__wrap">
+                            <div class="bileti-sposobi__col">
+                                <a href="" class="bileti-sposobi__item">
+                                    <div class="bileti-sposobi__title">Приватность</div>
+                                    <div class="bileti-sposobi__text">В вашем распоряжении отдельная ложа с индивидуальным балконом</div>
+                                </a>
+                            </div>
+                            <div class="bileti-sposobi__col">
+                                <a href="" class="bileti-sposobi__item">
+                                    <div class="bileti-sposobi__title">Комфорт</div>
+                                    <div class="bileti-sposobi__text">Мягкие кресла с лучим видом на поле</div>
+                                </a>
+                            </div>
+                            <div class="bileti-sposobi__col">
+                                <a href="" class="bileti-sposobi__item">
+                                    <div class="bileti-sposobi__title">Сервис</div>
+                                    <div class="bileti-sposobi__text">Ресторанное меню и обслуживание персональным официантом</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="news-section news-section--yourget">
+                <div class="container-fluid">
+                    <div class="custom-slider-content">
+                        <div class="custom-slider-container">
+                            <div class="custom-slider-title">
+                                <div class="custom-slider-title-content">
+                                    <span>вы</span> получите
+                                </div>
+                            </div>
+                            <div class="custom-slider-wrap">
+                                <div class="swiper custom-slider">
+                                    <div class="swiper-wrapper">
+                                        <a href="#" class="swiper-slide news-slide news-item">
+                                            <div class="news-item-img-wrap">
+                                                <img src="./img/loji/s1.png" class="news-item-img" alt="">
+                                                <div class="news-item-caption">
+                                                    <div class="news-item-title">Закрытое помещение</div>
+                                                </div>
+                                            </div>
+                                            <p class="news-item-text">Закрытое помещение на 10 мест или на 24 места</p>
+                                        </a>
+                                        <a href="#" class="swiper-slide news-slide news-item">
+                                            <div class="news-item-img-wrap">
+                                                <img src="./img/loji/s2.png" class="news-item-img" alt="">
+                                                <div class="news-item-caption">
+                                                
+                                                    <div class="news-item-title">Доступ на балкон</div>
+                                                </div>
+                                            </div>
+                                            <p class="news-item-text">Балкон оборудован продогреваемыми мягкими креслами</p>
+                                        </a>
+                                        <a href="#" class="swiper-slide news-slide news-item">
+                                            <div class="news-item-img-wrap">
+                                                <img src="./img/loji/s3.png" class="news-item-img" alt="">
+                                                <div class="news-item-caption">
+                                                    <div class="news-item-title">Меню</div>
+                                                </div>
+                                            </div>
+                                            <p class="news-item-text">К каждому матчу более 10 блюд на выбор и элитный алкоголь</p>
+                                        </a>
+                                        <a href="#" class="swiper-slide news-slide news-item">
+                                            <div class="news-item-img-wrap">
+                                                <img src="./img/loji/s4.png" class="news-item-img" alt="">
+                                                <div class="news-item-caption">
+                                                    <div class="news-item-title">Персональный официант</div>
+                                                </div>
+                                            </div>
+                                            <p class="news-item-text">Обслуживание персональным официантом во время матча и после игры</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="custom-slider-bottom">
+                            <div class="slider-bottom-btn">
+                                
+                            </div>
+                            <div class="custom-slider-bottom-ctrls">
+                                <div class="swiper-prev disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-74e9bb110ed8e26b4" aria-disabled="true"><span class="icon-arrow-left"></span></div>
+                                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span></div>
+                                <div class="swiper-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-74e9bb110ed8e26b4" aria-disabled="false"><span class="icon-arrow-right"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="big-foto">
+                <div class="big-foto__slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="big-foto__slider__img">
+                                <img src="./img/loji/b1.jpg">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="big-foto__slider__img">
+                                <img src="./img/loji/b2.jpg">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="big-foto__slider__img">
+                                <img src="./img/loji/b3.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="big-foto__slider-nav">
+                            <div class="big-foto__slider-prev swiper-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-9913ab10fcbe62302" aria-disabled="false"><span class="icon-arrow-left"></span></div>
+                            
+                            <div class="big-foto__slider-next swiper-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-9913ab10fcbe62302" aria-disabled="false"><span class="icon-arrow-right"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="lojo-images">
+                <div class="container-fluid">
+                    <a href="./img/loji/loji-images.jpg" data-fslightbox="gallery">
+                        <img src="./img/loji/loji-images.jpg">
+                    </a>
+                </div>
+            </section>
+
+            <section class="loji-backcall">
+                <img class="loji-backcall__back" src="./img/loji/lojo-images-back.png">
+                <div class="container-fluid">
+                    <div class="custom-slider-container">
+                        <div class="custom-slider-title">
+                            <div class="custom-slider-title-content">
+                                <span>Обратный</span> звонок
+                            </div>
+                        </div>
+                        <div class="custom-slider-wrap">
+                            <div class="loji-backcall__wrap">
+                                <form class="loji-backcall__form">
+                                    <div class="loji-backcall__form__text">
+                                        Если у вас возникли вопросы, мы с радостью на них ответим
+                                    </div>
+                                    <div class="loji-backcall__form__row">
+                                        <input type="tel" class="phone-mask" value="+7">
+                                        <label class="label">Введите ваш телефон</label>
+                                    </div>
+                                    <div class="loji-backcall__form__row">
+                                        <input type="text" placeholder="Введите ваше имя">
+                                    </div>
+                                    <button type="submit" class="btn btn-red">Заказать звонок</button>
+                                    <div class="loji-backcall__copy">Нажимая кнопку, вы соглашаетесь<br>
+                                        с Политикой конфиденциальности </div>
+                                </form>
+                                <div class="loji-backcall__text">
+                                    <p>
+                                        Приобретая ложу на нашем стадионе, вы становитесь партнёром клуба и получаете в своё распоряжение особые рекламные возможности, предоставляемые нашим клубом, и право участвовать в традиционных встречах с командой.
+                                    </p>
+                                    
+                                    <p>
+                                        <a href="">Но главное – вы становитесь частью «локомотива»!</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+
+            <section class="matches-section matches-section--loji">
+                <div class="container-fluid">
+                    <div class="page-section-header">
+                        <h2><span class="green-text">24 дня</span>До ближайшего матча</h2>
+                    </div>
+                    <div class="matches-slider-container">
+                        <div class="matches-slider swiper">
+                            <div class="swiper-wrapper" >
+                                <div class="swiper-slide match-slide" >
+                                    <div class="match-header">
+                                        <div class="match-date">6.08</div>
+                                        <div class="match-time">
+                                            <span>17:00</span>
+                                            Пятница
+                                        </div>
+                                    </div>
+                                    <div class="match-teams">
+                                        <div class="match-team">
+                                            <img src="./img/lok.png" alt="" class="match-team-logo">
+                                            <div class="match-team-title">Локомотив</div>
+                                        </div>
+                                        <div class="match-score">0 : 0</div>
+                                        <div class="match-team">
+                                            <img src="./img/ufa.png" alt="" class="match-team-logo">
+                                            <div class="match-team-title">УФА</div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn btn-small btn-green match-btn">Матч-центр</a>
+                                    <div class="match-line">
+                                        <div class="odds">4,30</div>
+                                        <a href="#" class="odds-sportsbook" target="_blank">
+                                            <img src="./img/onex.png" alt="">
+                                        </a>
+                                        <div class="odds">2,50</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide match-slide" >
+                                    <div class="match-header">
+                                        <div class="match-date">6.08</div>
+                                        <div class="match-time">
+                                            <span>17:00</span>
+                                            Пятница
+                                        </div>
+                                    </div>
+                                    <div class="match-teams">
+                                        <div class="match-team">
+                                            <img src="./img/lok.png" alt="" class="match-team-logo">
+                                            <div class="match-team-title">Локомотив</div>
+                                        </div>
+                                        <div class="match-score">0 : 0</div>
+                                        <div class="match-team">
+                                            <img src="./img/ufa.png" alt="" class="match-team-logo">
+                                            <div class="match-team-title">УФА</div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn btn-small btn-green match-btn">Матч-центр</a>
+                                    <div class="match-line">
+                                        <div class="odds">4,30</div>
+                                        <a href="#" class="odds-sportsbook" target="_blank">
+                                            <img src="./img/onex.png" alt="">
+                                        </a>
+                                        <div class="odds">2,50</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide match-slide" >
+                                    <div class="match-header">
+                                        <div class="match-date">6.08</div>
+                                        <div class="match-time">
+                                            <span>Live</span>
+                                            Пятница
+                                        </div>
+                                    </div>
+                                    <div class="match-teams">
+                                        <div class="match-team">
+                                            <img src="./img/lok.png" alt="" class="match-team-logo">
+                                            <div class="match-team-title">Локомотив</div>
+                                        </div>
+                                        <div class="match-score">0 : 0</div>
+                                        <div class="match-team">
+                                            <img src="./img/ufa.png" alt="" class="match-team-logo">
+                                            <div class="match-team-title">УФА</div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn btn-small btn-green match-btn">Матч-центр</a>
+                                    <div class="match-line">
+                                        <div class="odds">4,30</div>
+                                        <a href="#" class="odds-sportsbook" target="_blank">
+                                            <img src="./img/onex.png" alt="">
+                                        </a>
+                                        <div class="odds">2,50</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide match-slide" >
+                                    <div class="match-header">
+                                        <div class="match-date">6.08</div>
+                                        <div class="match-time">
+                                            <span>17:00</span>
+                                            Пятница
+                                        </div>
+                                    </div>
+                                    <div class="match-teams">
+                                        <div class="match-team">
+                                            <img src="./img/zenit.png" alt="" class="match-team-logo">
+                                            <div class="match-team-title">Зенит</div>
+                                        </div>
+                                        <div class="match-score future-match">vs</div>
+                                        <div class="match-team">
+                                            <img src="./img/lok.png" alt="" class="match-team-logo">
+                                            <div class="match-team-title">Локомотив</div>
+                                        </div>
+
+                                    </div>
+                                    <a href="#" class="btn btn-small btn-red match-btn">Купить билеты</a>
+                                    <div class="match-line">
+                                        <div class="odds">4,30</div>
+                                        <a href="#" class="odds-sportsbook" target="_blank">
+                                            <img src="./img/onex.png" alt="">
+                                        </a>
+                                        <div class="odds">2,50</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide match-slide" >
+                                    <div class="match-header">
+                                        <div class="match-date">6.08</div>
+                                        <div class="match-time">
+                                            <span>17:00</span>
+                                            Пятница
+                                        </div>
+                                    </div>
+                                    <div class="match-teams">
+                                        <div class="match-team">
+                                            <img src="./img/zenit.png" alt="" class="match-team-logo">
+                                            <div class="match-team-title">Зенит</div>
+                                        </div>
+                                        <div class="match-score future-match">vs</div>
+                                        <div class="match-team">
+                                            <img src="./img/lok.png" alt="" class="match-team-logo">
+                                            <div class="match-team-title">Локомотив</div>
+                                        </div>
+
+                                    </div>
+                                    <a href="#" class="btn btn-small btn-red match-btn">Купить билеты</a>
+                                    <div class="match-line">
+                                        <div class="odds">4,30</div>
+                                        <a href="#" class="odds-sportsbook" target="_blank">
+                                            <img src="./img/onex.png" alt="">
+                                        </a>
+                                        <div class="odds">2,50</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide match-slide" >
+                                    <div class="match-header">
+                                        <div class="match-date">6.08</div>
+                                        <div class="match-time">
+                                            <span>17:00</span>
+                                            Пятница
+                                        </div>
+                                    </div>
+                                    <div class="match-teams">
+                                        <div class="match-team">
+                                            <img src="./img/zenit.png" alt="" class="match-team-logo">
+                                            <div class="match-team-title">Зенит</div>
+                                        </div>
+                                        <div class="match-score future-match">vs</div>
+                                        <div class="match-team">
+                                            <img src="./img/lok.png" alt="" class="match-team-logo">
+                                            <div class="match-team-title">Локомотив</div>
+                                        </div>
+
+                                    </div>
+                                    <a href="#" class="btn btn-small btn-red match-btn">Купить билеты</a>
+                                    <div class="match-line">
+                                        <div class="odds">4,30</div>
+                                        <a href="#" class="odds-sportsbook" target="_blank">
+                                            <img src="./img/onex.png" alt="">
+                                        </a>
+                                        <div class="odds">2,50</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="matches-slider-nav">
+                            <div class="matches-slider-prev swiper-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-9913ab10fcbe62302" aria-disabled="false"><span class="icon-arrow-left"></span></div>
+                            <div class="matches-slider-nav-info">
+                                <a href="#" class="readmore-link readmore-center">Анонс матча</a>
+                            </div>
+                            <div class="matches-slider-next swiper-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-9913ab10fcbe62302" aria-disabled="false"><span class="icon-arrow-right"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+  
+    @include('partials/footer.html')
+  </div>
+
+  <script type="text/javascript" src="js/vendor.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+
+</html>

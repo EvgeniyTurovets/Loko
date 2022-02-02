@@ -53,7 +53,8 @@ $(document).ready(function(){
     $('.phone-mask-personal').inputmask({mask: "+7 (***) *** ** **","placeholder": "+7 (***) *** ** **"});
     $('.input-data').inputmask({mask: "99.99.9999"});
     $('.cart-input-mask').inputmask({mask: "999-999-999-999",});
-  
+    $('.input-tel-zero').inputmask({mask: "+7 999 999 99 99", "placeholder": "+7 000 000 00 00"});
+    
     $('.personal__form__show-pass').on('click', function(){
         if($(this).hasClass('active')){
             $(this).closest('.personal__form__row--password').find('input').attr('type', 'password')
@@ -73,4 +74,16 @@ $(document).ready(function(){
         $(this).next('.faq__content').slideToggle(300)
         $(this).toggleClass('active')
     })
+
+    const big_foto_slider = new Swiper('.big-foto__slider', {
+		spaceBetween: 30,
+		centeredSlides: true,
+		slidesPerView: 'auto',
+		initialSlide: 1,
+		loop: false,
+		navigation: {
+			nextEl: ".big-foto__slider-next",
+			prevEl: ".big-foto__slider-prev",
+		},
+	})
 })
