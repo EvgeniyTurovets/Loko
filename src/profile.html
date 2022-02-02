@@ -181,37 +181,47 @@
                                 <div class="profile-wrap__text2">
                                     Ты в программе лояльности «Состав». Будь активен. Прокачивай свой статус. Зарабатывай баллы. Пользуйся привилегиями от клуба.
                                 </div>
-                                <form class="profile-form">
+                                <div class="profile-form">
                                     <div class="profile-form__block">
                                         <div class="profile-form__row">
                                             <div class="profile-form__col profile-form__col--big">
                                                 <label class="label">ФИО:</label>
-                                                <div class="profile-form__text">ИВАНОВ ИВАН ИВАНОВИЧ</div>
+                                                <input class="profile-form__text" value="ИВАНОВ ИВАН ИВАНОВИЧ">
                                             </div>
                                         </div>
                                         <div class="profile-form__row">
                                             <div class="profile-form__col profile-form__col--big">
                                                 <label class="label">Дата рождения:</label>
-                                                <div class="profile-form__text">2021-07-10</div>
+                                                <input class="profile-form__text input-data" type="text" value="2021-07-10">
                                             </div>
                                             <div class="profile-form__col">
                                                 <label class="label">Пол:</label>
-                                                <div class="profile-form__text">Мужской</div>
+                                                <select class="custom-select">
+                                                    <option>Мужской</option>
+                                                    <option>Женский</option>
+                                                </select>
                                             </div>
                                             <div class="profile-form__col">
                                                 <label class="label">Населенный пункт:</label>
-                                                <div class="profile-form__text">Москва</div>
+                                                <input class="profile-form__text" value="Москва">
                                             </div>
                                         </div>
                                         <div class="profile-form__row">
                                             <div class="profile-form__col profile-form__col--big">
                                                 <label class="label">Семейное положение</label>
-                                                <div class="profile-form__text">Не женат/Не замужем</div>
+                                                <select class="custom-select">
+                                                    <option>Не женат/Не замужем</option>
+                                                    <option>женат/замужем</option>
+                                                </select>
+                                                
                                             </div>
                                             <div class="profile-form__col">
                                                 <label class="label">Наличие детей
                                                 </label>
-                                                <div class="profile-form__text">Нет</div>
+                                                <select class="custom-select">
+                                                    <option>Да</option>
+                                                    <option>Нет</option>
+                                                </select>
                                             </div>
                                         </div>
                                         
@@ -220,18 +230,19 @@
                                         <div class="profile-form__row">
                                             <div class="profile-form__col profile-form__col--big">
                                                 <label class="label">Телефон:</label>
-                                                <div class="profile-form__text">+70000000012</div>
+                                                <input class="profile-form__text phone-mask" value="+70000000012">
                                             </div>
                                             <div class="profile-form__col">
                                                 <label class="label">E-mail:</label>
-                                                <div class="profile-form__text">ivanov@mail.ru</div>
+                                                <input class="profile-form__text" value="ivanov@mail.ru">
                                             </div>
                                         </div>
                                     </div>
                                     <button type="button" class="btn-reset">
                                         Редактировать данные
                                     </button>
-                                </form>
+                                </div>
+
                             </div>
                         </div>
                     </div>

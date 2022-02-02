@@ -382,3 +382,24 @@
 .personal__form__text{
     margin-bottom: 40px;
 }
+
+
+.page-wrap .profile-form .profile-form__text{
+    background: transparent;
+    border: 0;
+    color: #fff;
+    width: 100%;
+}
+
+.page-wrap .profile-form{
+    .chosen-container-single .chosen-single{
+        min-height: initial;
+        padding: 0;
+        color: #fff;
+        border-bottom: 0;
+    }
+    .chosen-container-single .chosen-single div{
+        
+        display: none;
+    }
+}

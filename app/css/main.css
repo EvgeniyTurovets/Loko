@@ -1042,7 +1042,7 @@ input::placeholder {
 }
 .profile-wrap__row .left {
   flex: 0 0 285px;
-  margin-right: 78px;
+  margin-right: 60px;
 }
 .profile-wrap__row .right {
   flex: 1;
@@ -1089,12 +1089,13 @@ input::placeholder {
 .profile-form__col {
   margin-bottom: 15px;
   margin-right: 20px;
-  min-width: 121px;
+  min-width: 135px;
+  width: 135px;
 }
 
 .profile-form__col--big {
   width: calc(45% - 42px);
-  margin-right: 42px;
+  margin-right: 30px;
 }
 
 .profile-form__col:last-child {
@@ -1109,6 +1110,7 @@ input::placeholder {
   color: #A9A9B5;
   margin-bottom: 13px;
   display: block;
+  white-space: nowrap;
 }
 
 .profile-form__text {
@@ -2735,6 +2737,23 @@ input::placeholder {
 
 .personal__form__text {
   margin-bottom: 40px;
+}
+
+.page-wrap .profile-form .profile-form__text {
+  background: transparent;
+  border: 0;
+  color: #fff;
+  width: 100%;
+}
+
+.page-wrap .profile-form .chosen-container-single .chosen-single {
+  min-height: initial;
+  padding: 0;
+  color: #fff;
+  border-bottom: 0;
+}
+.page-wrap .profile-form .chosen-container-single .chosen-single div {
+  display: none;
 }
 
 .faq__title {
