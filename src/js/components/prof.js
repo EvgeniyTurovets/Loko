@@ -86,4 +86,25 @@ $(document).ready(function(){
 			prevEl: ".big-foto__slider-prev",
 		},
 	})
+
+    var slider2 = new Swiper('.abonement__slider', {
+        loop: false,
+        spaceBetween: 30,
+        slidesPerView: 1,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+        navigation: {
+            nextEl: '.swiper-next',
+            prevEl: '.swiper-prev',
+            disabledClass: 'disabled',
+        },
+
+        breakpoints: {
+			767: {
+				slidesPerView: 'auto',
+			}
+		}
+    })
 })

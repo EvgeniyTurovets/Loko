@@ -224,11 +224,35 @@
     width: 100%;
     top: 0;
     left: 0;
-    opacity: 0.9;
+    opacity: 0.5;
 }
 
 @media(max-width: 767px){
     .loji-backcall__back{
         display: none;
     }
+    .matches-section{
+        padding-top: 50px;
+    }
 }
+
+
+.scheme-section {
+    margin: 50px 0;
+}
+
+.scheme-section iframe {
+    width: 100%;
+    border: 0;
+    height: 585px;
+}
+@media (max-width: 767px){
+    .scheme-section {
+        margin: 60px 0;
+    }
+    .scheme-section iframe {
+        height: 280px;
+    }
+}
+
+

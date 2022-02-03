@@ -239,10 +239,18 @@
 }
 .matches-section--loji{
     margin-bottom: 0;
+    .page-section-header{
+        margin-bottom: 40px;
+    }
+    .container-fluid{
+        position: relative;
+        z-index: 2;
+    }
 }
 .matches-section--loji:before{
     background-image: url('../img/loji/main-bck-2.png');
-    height: 800px;
+    height: 900px;
+    z-index: 0;
 }
 
 @media(max-width: 767px){
