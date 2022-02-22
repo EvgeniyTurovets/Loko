@@ -299,6 +299,11 @@ input::placeholder {
   color: #fff;
 }
 
+@media (max-width: 374px) {
+  .prof .btn {
+    font-size: 15px;
+  }
+}
 .soc-right {
   position: absolute;
   right: 32px;
