@@ -1004,6 +1004,23 @@ input::placeholder{
     min-width: 135px;
     width: 135px;
 }
+@media(min-width: 576px){
+    .profile-form__col.profile-form__col--email{
+        width: auto;
+        flex: 1;
+        padding-right: 2px;
+    }
+    .profile-form__col.profile-form__col--name{
+        width: 100%;
+        padding-right: 2px;
+    }
+    .profile-form__col.profile-form__col--city{
+        width: auto;
+        flex: 1;
+        padding-right: 2px;
+    }
+}
+
 .profile-form__col--big{
     width: calc(45% - 42px);
     margin-right: 30px;
